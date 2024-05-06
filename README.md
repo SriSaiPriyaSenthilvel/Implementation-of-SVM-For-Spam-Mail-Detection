@@ -38,7 +38,8 @@ X = data["v1"].values
 Y = data["v2"].values
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2, random_state=0)
-
+```
+```
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer()
 X_train = cv.fit_transform(X_train)
